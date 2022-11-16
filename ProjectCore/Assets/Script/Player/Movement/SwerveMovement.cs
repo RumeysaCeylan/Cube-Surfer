@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class SwerveMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private SwerveInputSystem _swerveInputSystem;
+    [SerializeField] private float swerveSpeed = 0.5f;
+    [SerializeField] private float maxSwerveAmount = 1f;
+
+    private void Awake()
     {
-        
+        _swerveInputSystem = GetComponent<SwerveInputSystem>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        float swerveAmount = Time.deltaTime * swerveSpeed * _swerveInputSystem.MoveFactorX;
+        swerveAmount = Mathf.Clamp(swerveAmount, -maxSwerveAmount, maxSwerveAmount);
+        transform.Translate(swerveAmount, 0, 0);
     }
 }
