@@ -7,6 +7,8 @@ TagManager:
   - Cube
   - Obstacle
   - Coin
+  - Cyristal
+  - BCoing
   layers:
   - Default
   - TransparentFX

@@ -9,8 +9,12 @@ public class PlayerBehaviour : MonoBehaviour
 
     public PlayerMoverRunner playerMoverRunner;
 
+    
+
+
     private void Awake()
     {
+        
         Singleton();
     }
 
@@ -32,16 +36,23 @@ public class PlayerBehaviour : MonoBehaviour
     public void VictoryAnimation()
     {
         animatorOfPlayer.SetTrigger("Victory");
+       
     }
 
     public void FailAnimation()
     {
+       
+
         animatorOfPlayer.SetTrigger("Fail");
+        
+        
     }
 
     public void StopPlayer()
     {
         DOTween.To(() => playerMoverRunner.Velocity, x => playerMoverRunner.Velocity = x, 0, 0.003f);
+        
+
     }
 
 
