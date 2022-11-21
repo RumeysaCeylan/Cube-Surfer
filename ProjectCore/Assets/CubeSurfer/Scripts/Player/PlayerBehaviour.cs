@@ -9,8 +9,8 @@ public class PlayerBehaviour : MonoBehaviour
 
     public PlayerMoverRunner playerMoverRunner;
 
-    
 
+  
 
     private void Awake()
     {
@@ -44,7 +44,7 @@ public class PlayerBehaviour : MonoBehaviour
        
 
         animatorOfPlayer.SetTrigger("Fail");
-        
+       
         
     }
 

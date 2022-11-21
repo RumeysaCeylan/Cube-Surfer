@@ -10,7 +10,8 @@ public class PlayerCubeManager : MonoBehaviour
     private float groundYValue = -0.0213f;
 
     public List<CubeBehaviour> listOfCubeBehaviour = new List<CubeBehaviour>();
- 
+
+   
 
     private void Awake()
     {
@@ -64,7 +65,7 @@ public class PlayerCubeManager : MonoBehaviour
             Debug.Log("Gameover");
 
             PlayerBehaviour.Instance.FailAnimation();
-           // audioSource.PlayOneShot(fail, 7f);
+
             PlayerBehaviour.Instance.StopPlayer();
 
             var playerTransform2 = PlayerBehaviour.Instance.transform;
