@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Cyristal
   - BCoing
+  - Firework
   layers:
   - Default
   - TransparentFX

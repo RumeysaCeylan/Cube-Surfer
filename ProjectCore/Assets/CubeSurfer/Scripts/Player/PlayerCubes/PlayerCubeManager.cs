@@ -12,9 +12,8 @@ public class PlayerCubeManager : MonoBehaviour
 
     public List<CubeBehaviour> listOfCubeBehaviour = new List<CubeBehaviour>();
 
-   // [SerializeField] private float delayBeforeLoading = 5f;
-
-   // private float timeElapsed;
+    public GameObject reStartButton;
+    public GameObject quitButton;
 
     private void Awake()
     {
@@ -74,12 +73,10 @@ public class PlayerCubeManager : MonoBehaviour
             var playerTransform2 = PlayerBehaviour.Instance.transform;
             Vector3 groundTarget = new Vector3(0f, -0.016f, -0.14f);
             playerTransform2.DOLocalJump(groundTarget, 0.05f, 1, 0.5f);
-            //     timeElapsed += Time.deltaTime;
-            //  if (timeElapsed > delayBeforeLoading)
-            //   {
-            //System.Threading.Thread.Sleep(5000);
-           // SceneManager.LoadScene(4);
-        //}
+
+            reStartButton.SetActive(true);
+            quitButton.SetActive(true);
+        
             return;
         }
 
@@ -87,7 +84,7 @@ public class PlayerCubeManager : MonoBehaviour
 
     }
 
-
+   
     private void ReorderCubes()
     {
         int index = listOfCubeBehaviour.Count - 1;

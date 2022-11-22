@@ -9,17 +9,12 @@ public class FinishLine : MonoBehaviour
    
     public AudioSource victorySound;
 
-    [SerializeField] private float delayBeforeLoading = 10f;
+    
 
-    private float timeElapsed;
-    private void Update()
-    {
-        timeElapsed += Time.deltaTime;
-        if (timeElapsed > delayBeforeLoading)
-        {
-            SceneManager.LoadScene(2);
-        }
-    }
+   // public Animator fireworks;
+
+    public GameObject nextButton;
+    public GameObject menuButton;
 
 
     private void OnTriggerEnter(Collider other)
@@ -34,9 +29,14 @@ public class FinishLine : MonoBehaviour
             PlayerBehaviour.Instance.StopPlayer();
 
             victorySound.Play();
-            LevelText.level += 1; 
-           
-    
+
+            nextButton.SetActive(true);
+            menuButton.SetActive(true);
+
+
+
+
+
 
 
         }

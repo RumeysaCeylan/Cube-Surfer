@@ -13,6 +13,7 @@ public class CoinPoint : MonoBehaviour
     {
         if (other.tag=="Cube")
         {
+            
             CoinText.coinAmount += 1;
 
             coinSound.Play();

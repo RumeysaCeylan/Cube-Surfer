@@ -7,6 +7,7 @@ public class CubeBehaviour : MonoBehaviour
     private Vector3 direction = Vector3.forward;
     public bool isStacked = false;
     private RaycastHit hit;
+    string a;
 
     void FixedUpdate()
     {
