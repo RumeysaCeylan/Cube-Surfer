@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class CoinText : MonoBehaviour
 {
     Text text;
-    public static int coinAmount;
+    public static int coinAmount=0;
     
     // Start is called before the first frame update
     void Start()
