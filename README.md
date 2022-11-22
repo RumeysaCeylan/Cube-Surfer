@@ -19,5 +19,9 @@ Coins are worth 1 point while big coins are worth 10 points.
 
 
 ![3](https://user-images.githubusercontent.com/59581456/203437875-507b10d5-cfcd-4e27-a7cb-a173c433b4ab.jpg)
+
+
+
+
 <br>
 ![4](https://user-images.githubusercontent.com/59581456/203437886-13a0c4d9-18e1-4213-8af1-104925b4b6bf.jpg)
