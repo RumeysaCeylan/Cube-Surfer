@@ -11,7 +11,7 @@ public class PlayerCubeManager : MonoBehaviour
     private float groundYValue = -0.0213f;
 
     public List<CubeBehaviour> listOfCubeBehaviour = new List<CubeBehaviour>();
-
+    
     public GameObject reStartButton;
     public GameObject quitButton;
 
@@ -73,6 +73,8 @@ public class PlayerCubeManager : MonoBehaviour
             var playerTransform2 = PlayerBehaviour.Instance.transform;
             Vector3 groundTarget = new Vector3(0f, -0.016f, -0.14f);
             playerTransform2.DOLocalJump(groundTarget, 0.05f, 1, 0.5f);
+
+            
 
             reStartButton.SetActive(true);
             quitButton.SetActive(true);

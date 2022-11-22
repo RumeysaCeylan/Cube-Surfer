@@ -9,12 +9,16 @@ public class FinishLine : MonoBehaviour
    
     public AudioSource victorySound;
 
-    
+    public AudioSource fireworkSound;
 
-   // public Animator fireworks;
+
 
     public GameObject nextButton;
     public GameObject menuButton;
+
+    public ParticleSystem fireworks;
+
+  
 
 
     private void OnTriggerEnter(Collider other)
@@ -29,6 +33,10 @@ public class FinishLine : MonoBehaviour
             PlayerBehaviour.Instance.StopPlayer();
 
             victorySound.Play();
+
+            fireworkSound.Play();
+
+            fireworks.Play();
 
             nextButton.SetActive(true);
             menuButton.SetActive(true);
