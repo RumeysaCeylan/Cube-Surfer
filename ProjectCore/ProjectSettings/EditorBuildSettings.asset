@@ -17,7 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/CubeSurfer/Scenes/3.unity
     guid: 7349978df80ddaf43b7f87634fceb677
-  - enabled: 1
-    path: Assets/CubeSurfer/Scenes/Restart.unity
-    guid: 412d411c78203d543a664ab4f9f072f4
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}
